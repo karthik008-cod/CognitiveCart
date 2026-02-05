@@ -5,7 +5,52 @@
     <title>CognitiveCart</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CognitiveCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
+
+<div class="container">
+
+    <header>
+        <h1>🛒 CognitiveCart</h1>
+        <p>Find the smartest deal, not just the cheapest.</p>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="productInput" placeholder="Search for a product...">
+        <button onclick="searchProduct()">Search</button>
+    </div>
+
+    <!-- SECTIONS -->
+    <div id="dashboard" class="dashboard hidden">
+
+        <section>
+            <h2>💰 Best Price</h2>
+            <div id="bestPrice" class="card-grid"></div>
+        </section>
+
+        <section>
+            <h2>⭐ Top Rated</h2>
+            <div id="bestRating" class="card-grid"></div>
+        </section>
+
+        <section>
+            <h2>⚖️ All Offers</h2>
+            <div id="allOffers" class="card-grid"></div>
+        </section>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
 
     <div class="container">
         <h1>🛒 CognitiveCart</h1>
@@ -22,3 +67,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
