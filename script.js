@@ -1,28 +1,44 @@
 function searchProduct() {
     const product = document.getElementById("productInput").value;
-    const resultsDiv = document.getElementById("results");
+    const dashboard = document.getElementById("dashboard");
 
-    resultsDiv.innerHTML = "";
+    if (product === "") return;
 
-    if (product === "") {
-        resultsDiv.innerHTML = "<p>Please enter a product name.</p>";
-        return;
-    }
+    dashboard.classList.remove("hidden");
 
-    // Dummy data (backend will replace this later)
-    const platforms = [
-        { name: "Amazon", price: "₹52,999" },
-        { name: "Flipkart", price: "₹51,499" },
-        { name: "Reliance Digital", price: "₹53,200" }
+    const offers = [
+        { platform: "Amazon", price: 52999, rating: 4.5 },
+        { platform: "Flipkart", price: 51499, rating: 4.3 },
+        { platform: "Reliance Digital", price: 53200, rating: 4.6 },
+        { platform: "Croma", price: 52500, rating: 4.2 }
     ];
 
-    platforms.forEach(p => {
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-            <h3>${p.name}</h3>
-            <p>Price: <strong>${p.price}</strong></p>
-        `;
-        resultsDiv.appendChild(card);
-    });
+    // SORTED LISTS
+    const bestPrice = [...offers].sort((a,b) => a.price - b.price)[0];
+    const bestRating = [...offers].sort((a,b) => b.rating - a.rating)[0];
+
+    displaySingle("bestPrice", bestPrice);
+    displaySingle("bestRating", bestRating);
+    displayAll("allOffers", offers);
+}
+
+function displaySingle(id, offer) {
+    const div = document.getElementById(id);
+    div.innerHTML = cardHTML(offer);
+}
+
+function displayAll(id, offers) {
+    const div = document.getElementById(id);
+    div.innerHTML = "";
+    offers.forEach(o => div.innerHTML += cardHTML(o));
+}
+
+function cardHTML(o) {
+    return `
+        <div class="card">
+            <h3>${o.platform}</h3>
+            <p>💰 Price: ₹${o.price}</p>
+            <p>⭐ Rating: ${o.rating}</p>
+        </div>
+    `;
 }
