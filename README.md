@@ -1,4 +1,6 @@
 # 🛒 AI‑Powered Price Comparison & Prediction Platform
+📌 Problem Statement :
+Online shoppers must manually compare product prices across platforms like Amazon and Flipkart, which is time-consuming and inefficient. There is no single intelligent system that provides real-time price comparison, review analysis, and smart purchase recommendations. This project aims to build an AI-powered MERN stack application that aggregates product data from multiple platforms and recommends the best buying option to help users save time and money.
 
 A full‑stack, AI‑powered web application that allows users to **compare product prices across platforms** and **predict future price movements** (high/low trends) using intelligent analysis.
 
@@ -20,6 +22,12 @@ Built with modern web technologies and real‑time APIs.
 - 🔐 Secure API key handling
 
 ---
+🎯 ## Objectives of the Project
+-To develop a MERN stack application that compares product prices across platforms like Amazon and Flipkart.
+-To provide AI-based recommendations for selecting the best platform to purchase a product.
+-To analyze customer reviews using an open-source LLM and summarize key pros and cons.
+-To track historical prices and notify users about price drops.
+-To reduce manual searching effort and help users make smarter buying decisions.
 
 ## ✨ Features
 
@@ -69,5 +77,41 @@ Built with modern web technologies and real‑time APIs.
 - AI‑based decision logic
 - Price trend analysis & prediction
 - Modular design for future ML integration
+
+## Stakeholders:
+Stakeholders = People or systems affected by the project.
+->👤 Primary Stakeholders
+End Users (Online shoppers)
+Admin / Project Owner
+
+->👨‍💻 Secondary Stakeholders
+Developers
+E-commerce platforms (Amazon, Flipkart)
+Affiliate partners
+
+->🧠 System Stakeholders
+AI Service
+Database
+Backend Server
+
+
+## Roles:
+| Stakeholder    | Role                           |
+| -------------- | ------------------------------ |
+| User           | Searches and compares products |
+| Admin          | Manages system data            |
+| Backend Server | Handles API requests           |
+| AI Agents      | Analyze & recommend            |
+| Database       | Stores structured data         |
+| External APIs  | Provide price information      |
+
+## Interactions:
+User → React UI
+React → Node API
+Node → MongoDB
+Node → AI Service
+AI → Node
+Node → React
+React → User
 
 ---
