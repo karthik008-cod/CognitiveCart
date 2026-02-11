@@ -71,6 +71,3 @@ Built with modern web technologies and real‑time APIs.
 - Modular design for future ML integration
 
 ---
-
-## 📁 Project Structure
-
