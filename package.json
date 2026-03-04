@@ -1,0 +1,28 @@
+{
+  "name": "cognitivecart",
+  "version": "1.0.0",
+  "description": "📌 Problem Statement :\r Online shoppers must manually compare product prices across platforms like Amazon and Flipkart, which is time-consuming and inefficient. There is no single intelligent system that provides real-time price comparison, review analysis, and smart purchase recommendations. This project aims to build an AI-powered MERN stack application that aggregates product data from multiple platforms and recommends the best buying option to help users save time and money.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthik008-cod/CognitiveCart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/karthik008-cod/CognitiveCart/issues"
+  },
+  "homepage": "https://github.com/karthik008-cod/CognitiveCart#readme",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "node": "^25.8.0"
+  }
+}
