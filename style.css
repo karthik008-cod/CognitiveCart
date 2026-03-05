@@ -207,7 +207,7 @@ select option { background: var(--bg-dark); color: white; }
 #voiceBtn { background: transparent; border: 1px solid var(--glass-border); color: white; padding: 10px 15px; border-radius: 10px;}
 #voiceBtn:hover { background: rgba(255,255,255,0.1); }
 
-/* ================= MODALS ================= */ 
+/* ================= MODALS ================= */
 .modal {
   display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
   background: rgba(0,0,0,0.6); backdrop-filter: blur(8px);
@@ -233,4 +233,20 @@ select option { background: var(--bg-dark); color: white; }
   .hero-search h1 { font-size: 2rem; }
   .user-controls { justify-content: center; margin-top: 10px; }
   .top-bar { flex-direction: column; text-align: center; }
+}
+
+.password-box{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.password-box input{
+  flex:1;
+}
+
+.show-pass{
+  padding:6px 12px;
+  cursor:pointer;
+  border-radius:6px;
 }
