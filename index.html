@@ -62,7 +62,10 @@
       <h3 id="authTitle">Sign In</h3>
       
       <input id="username" placeholder="Username" autocomplete="username">
-      <input id="password" type="password" placeholder="Password" autocomplete="current-password">
+      <div class="password-box">
+        <input id="password" type="password" placeholder="Password">
+        <button type="button" onclick="togglePassword()" class="show-pass">Show</button>
+      </div>
       
       <button onclick="submitAuth()" id="authSubmitBtn">Submit</button>
       
@@ -264,6 +267,22 @@
   } catch (err) {
     document.getElementById("authMessage").innerText = "Server error. Is Node running?";
   }
+}
+
+function togglePassword(){
+
+  const passField = document.getElementById("password");
+  const btn = document.querySelector(".show-pass");
+
+  if(passField.type === "password"){
+    passField.type = "text";
+    btn.innerText = "Hide";
+  }
+  else{
+    passField.type = "password";
+    btn.innerText = "Show";
+  }
+
 }
 
     function showUser(username) {
