@@ -98,7 +98,7 @@ Backend Server
 ## Roles:
 | Stakeholder    | Role                           |
 | -------------- | ------------------------------ |
-| User           | Searches and compares products |
+| User           | Searches and compares products | 
 | Admin          | Manages system data            |
 | Backend Server | Handles API requests           |
 | AI Agents      | Analyze & recommend            |
